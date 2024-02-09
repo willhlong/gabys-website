@@ -12,11 +12,18 @@ function fetchImage() {
     })
     .then (data => {
         const el = document.getElementById('image-container');
-        const image = document.createElement('img');
-        image.src = data.message;
-        el.appendChild(image);
+        let count = el.children.length;
+        if (count > 0) {
+            el.children[0].src = data.message;
+        }
+        else {
+            const image = document.createElement('img');
+            image.src = data.message;
+            el.appendChild(image);
+        }
     })
     .catch((error) => console.error(error));
   }
 
-  
+  const imgBtn = document.getElementById('new-image-btn');
+  imgBtn.addEventListener('click', fetchImage); 
