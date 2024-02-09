@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#image-container, #btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#image-container {
+    height: 60%;
+    
+}
+
