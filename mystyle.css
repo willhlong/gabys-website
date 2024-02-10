@@ -1,19 +1,34 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('images/rinck-content-studio-O8PjuNKatJ0-unsplash.jpg');
+    background-size: contain;
 }
 
 h1 {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-#image-container, #btn-container {
+.content {
+    margin: 0 15%;
+    background-color: white;
+    min-height: 100dvh;
+}
+#btn-container {
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
 #image-container {
-    height: 60%;
-    
+    height: 50vh;
+}
+
+#image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
